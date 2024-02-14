@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/omega/static/css/main.2f18dd39.css",
-    "main.js": "/omega/static/js/main.e2825790.js",
+    "main.js": "/omega/static/js/main.477b28ee.js",
     "index.html": "/omega/index.html",
     "main.2f18dd39.css.map": "/omega/static/css/main.2f18dd39.css.map",
-    "main.e2825790.js.map": "/omega/static/js/main.e2825790.js.map"
+    "main.477b28ee.js.map": "/omega/static/js/main.477b28ee.js.map"
   },
   "entrypoints": [
     "static/css/main.2f18dd39.css",
-    "static/js/main.e2825790.js"
+    "static/js/main.477b28ee.js"
   ]
 }
