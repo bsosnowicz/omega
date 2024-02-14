@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/omega/static/css/main.2f18dd39.css",
-    "main.js": "/omega/static/js/main.477b28ee.js",
+    "main.js": "/omega/static/js/main.e1a64136.js",
+    "static/media/image1.jpg": "/omega/static/media/image1.a60a1c23366af49e29ee.jpg",
+    "static/media/icons.svg": "/omega/static/media/icons.fede1f2859307b484cb7a1dac3ae55a8.svg",
     "index.html": "/omega/index.html",
     "main.2f18dd39.css.map": "/omega/static/css/main.2f18dd39.css.map",
-    "main.477b28ee.js.map": "/omega/static/js/main.477b28ee.js.map"
+    "main.e1a64136.js.map": "/omega/static/js/main.e1a64136.js.map"
   },
   "entrypoints": [
     "static/css/main.2f18dd39.css",
-    "static/js/main.477b28ee.js"
+    "static/js/main.e1a64136.js"
   ]
 }
