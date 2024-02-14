@@ -1,6 +1,14 @@
 .header {
   height: 72px;
+}
+
+.background {
   background-color: #f1f1f1;
+  height: inherit;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 .container {
@@ -10,6 +18,10 @@
   justify-content: space-between;
   height: inherit;
   align-items: center;
+}
+
+.hamburger {
+  display: none;
 }
 
 .list {
@@ -31,4 +43,20 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .container {
+    width: 250px;
+    margin: 0 64px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .list {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
 }

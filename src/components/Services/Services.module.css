@@ -69,3 +69,29 @@
   align-items: center;
   cursor: pointer;
 }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .container {
+    width: 250px;
+    margin: 0 64px;
+  }
+  .nomargin {
+    margin: 0;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .image {
+    width: 247px;
+    height: 224px;
+  }
+  .itemContainer {
+    flex-direction: column;
+  }
+  .itemContainerNoMargin {
+    flex-direction: column-reverse;
+  }
+  .background {
+    height: 1145px;
+  }
+}

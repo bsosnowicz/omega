@@ -5,8 +5,9 @@ import icon from "../../images/icons.svg";
 const Header = () => {
   return (
     <div className={css.header}>
+      <div className={css.background}></div>
       <div className={css.container}>
-        <h2>OMEGA</h2>
+        <h2 className={css.title}>OMEGA</h2>
         <ul className={css.list}>
           <li onClick={() => scrollTo("services")} className={css.item}>
             Usługi
@@ -24,6 +25,7 @@ const Header = () => {
           </svg>
           <a onClick={() => scrollTo("contact")}>Zadzwoń do nas!</a>
         </button>
+        <button className={css.hamburger}>HAM</button>
       </div>
     </div>
   );

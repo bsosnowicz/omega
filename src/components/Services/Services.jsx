@@ -13,7 +13,7 @@ const Services = () => {
         </p>
       </div>
       <div className={css.itemContainer}>
-        <img alt="image" src={image1} />
+        <img className={css.image} alt="image" src={image1} />
         <div>
           <h4 className={css.itemHeader}>Sprzątanie pomieszczeń</h4>
           <p className={css.itemDescription}>
@@ -32,7 +32,7 @@ const Services = () => {
         </div>
       </div>
       <div className={css.background}></div>
-      <div className={css.container}>
+      <div className={`${css.container} ${css.nomargin}`}>
         <div className={css.itemContainerNoMargin}>
           <div className={css.textContainer}>
             <h4 className={css.itemHeader}>Usuwanie szkód po pożarach</h4>
@@ -55,12 +55,12 @@ const Services = () => {
               <a>Zadzwoń do nas!</a>
             </button>
           </div>
-          <img alt="image" src={image1} />
+          <img className={css.image} alt="image" src={image1} />
         </div>
       </div>
-      <div className={css.container}>
+      <div className={`${css.container} ${css.nomargin}`}>
         <div className={css.itemContainer}>
-          <img alt="image" src={image1} />
+          <img className={css.image} alt="image" src={image1} />
           <div className={css.textContainer}>
             <h4 className={css.itemHeader}>Czyszczenie suchym lodem</h4>
             <p className={css.itemDescription}>

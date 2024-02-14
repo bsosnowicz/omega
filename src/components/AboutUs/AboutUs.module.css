@@ -52,3 +52,20 @@
   width: 720px;
   padding-top: 8px;
 }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .container {
+    width: 250px;
+    margin: 0 64px;
+  }
+  .answer {
+    width: inherit;
+    font-size: 14px;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .headerDescription {
+    font-size: 14px;
+  }
+}

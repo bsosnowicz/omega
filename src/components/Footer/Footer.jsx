@@ -3,7 +3,8 @@ import icon from "../../images/icons.svg";
 
 const Footer = () => {
   return (
-    <div id="contact" className={css.background}>
+    <div>
+      <div id="contact" className={css.background}></div>
       <div className={css.container}>
         <h4 className={css.header}>Kontakt</h4>
         <ul className={css.itemList}>

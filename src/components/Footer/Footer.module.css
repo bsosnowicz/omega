@@ -1,8 +1,10 @@
 .background {
   background-color: #f1f1f1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 430px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
 }
 
 .container {
@@ -36,4 +38,27 @@
 
 .itemText {
   font-size: 14px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .container {
+    width: 250px;
+    margin: 0 64px;
+  }
+  .background {
+    height: 650px;
+  }
+  .itemList {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .itemHeader {
+    font-size: 16px;
+  }
+  .itemText {
+    font-size: 14px;
+  }
 }
