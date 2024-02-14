@@ -1,3 +1,4 @@
+import scrollTo from "../../utils/scroll";
 import css from "./Banner.module.css";
 
 const Banner = () => {
@@ -11,7 +12,12 @@ const Banner = () => {
         specjalistyczną obsługą w zakresie utrzymywania czystości dla przemysłu
         oraz klienta indywidualnego.
       </p>
-      <button className={css.button}>Zadzwoń do nas!</button>
+      <button onClick={() => scrollTo("contact")} className={css.button}>
+        <svg width="16" height="10">
+          <use href="../icons.svg#arrowbutton"></use>
+        </svg>
+        Zadzwoń do nas!
+      </button>
     </div>
   );
 };

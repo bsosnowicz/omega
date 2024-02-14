@@ -1,8 +1,18 @@
+.background {
+  background-color: #f1f1f1;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 640px;
+  z-index: -1;
+}
+
 .container {
   padding-top: 100px;
   width: 1110px;
   margin: 0 auto;
 }
+
 .headerContainer {
   text-align: center;
 }
@@ -12,12 +22,19 @@
   font-size: 40px;
 }
 
-.headerDescription {
+.itemContainer {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.textContainer {
   font-size: 20px;
 }
 
-.itemContainer {
-  margin: 100px 0;
+.itemContainerNoMargin {
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -31,6 +48,13 @@
 
 .itemDescription {
   font-size: 20px;
+  color: #3b3b3b;
+}
+
+.itemList {
+  margin: 40px 0 0 20px;
+  color: #3b3b3b;
+  text-align: left;
 }
 
 .button {
@@ -40,4 +64,8 @@
   border: none;
   border-radius: 4px;
   margin-top: 80px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
 }

@@ -1,8 +1,9 @@
+import scrollTo from "../../utils/scroll";
 import css from "./Services.module.css";
 
 const Services = () => {
   return (
-    <div className={css.container}>
+    <div id="services" className={css.container}>
       <div className={css.headerContainer}>
         <h3 className={css.header}>Usługi</h3>
         <p className={css.headerDescription}>
@@ -10,7 +11,7 @@ const Services = () => {
         </p>
       </div>
       <div className={css.itemContainer}>
-        <img src="../image1.jpg" />
+        <img alt="image" src="../image1.jpg" />
         <div>
           <h4 className={css.itemHeader}>Sprzątanie pomieszczeń</h4>
           <p className={css.itemDescription}>
@@ -19,14 +20,68 @@ const Services = () => {
             dalsze wykorzystanie mieszkań. Usuwamy nieprzyjemny zapach ozonując
             skrajnie zaniedbane lokale, komórki i piwnice.
           </p>
-          <button className={css.button}>Zadzwoń do nas !</button>
+          <button onClick={() => scrollTo("contact")} className={css.button}>
+            {" "}
+            <svg width="16" height="10">
+              <use href="../icons.svg#arrowbutton"></use>
+            </svg>
+            <a>Zadzwoń do nas!</a>
+          </button>
         </div>
       </div>
-      <div className={css.itemContainer}>
-        <div>
-          <h4 className={css.itemHeader}>Usuwanie szkód po pożarach</h4>
+      <div className={css.background}></div>
+      <div className={css.container}>
+        <div className={css.itemContainerNoMargin}>
+          <div className={css.textContainer}>
+            <h4 className={css.itemHeader}>Usuwanie szkód po pożarach</h4>
+            <p className={css.itemDescription}>
+              Wszystkie szkody pożarowe wymagają usunięcia przez specjalistów.
+              Nasze działania przeprowadzamy w oparciu o specjalistyczne metody
+              w usuwaniu szkód pożarowych:
+            </p>
+            <ul className={css.itemList}>
+              <li>czyszczenie sadzy ze ścian,</li>
+              <li>ozonowanie / zmgłamianie, </li>
+              <li>dezynfekcja przy użyciu certyfikowanych środków,</li>
+              <li>dezodoracja powierzchni</li>
+            </ul>
+            <button onClick={() => scrollTo("contact")} className={css.button}>
+              {" "}
+              <svg width="16" height="10">
+                <use href="../icons.svg#arrowbutton"></use>
+              </svg>
+              <a>Zadzwoń do nas!</a>
+            </button>
+          </div>
+          <img alt="image" src="../image1.jpg" />
         </div>
-        <img src="../image1.jpg" />
+      </div>
+      <div className={css.container}>
+        <div className={css.itemContainer}>
+          <img alt="image" src="../image1.jpg" />
+          <div className={css.textContainer}>
+            <h4 className={css.itemHeader}>Czyszczenie suchym lodem</h4>
+            <p className={css.itemDescription}>
+              Nasza firma świadczy usługi czyszczenia przemysłowego oferując
+              technologię czyszczenia suchym lodem. Jest to proces:
+            </p>
+            <ul className={css.itemList}>
+              <li>Przyjazny dla środowiska,</li>
+              <li>Bez użycia środków chemicznych, </li>
+              <li>Nieinwazyjny dla czyszczonych powierzchni,</li>
+              <li>
+                Idealny dla branży Automotive, Metalurgicznej oraz spożywczej.
+              </li>
+            </ul>
+            <button onClick={() => scrollTo("contact")} className={css.button}>
+              {" "}
+              <svg width="16" height="10">
+                <use href="../icons.svg#arrowbutton"></use>
+              </svg>
+              <a>Zadzwoń do nas!</a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

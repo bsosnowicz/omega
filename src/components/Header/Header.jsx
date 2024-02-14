@@ -1,3 +1,4 @@
+import scrollTo from "../../utils/scroll";
 import css from "./Header.module.css";
 
 const Header = () => {
@@ -6,11 +7,22 @@ const Header = () => {
       <div className={css.container}>
         <h2>OMEGA</h2>
         <ul className={css.list}>
-          <li>O nas</li>
-          <li>Usługi</li>
-          <li>Kontakt</li>
+          <li onClick={() => scrollTo("services")} className={css.item}>
+            Usługi
+          </li>
+          <li onClick={() => scrollTo("aboutus")} className={css.item}>
+            O nas
+          </li>
+          <li onClick={() => scrollTo("contact")} className={css.item}>
+            Kontakt
+          </li>
         </ul>
-        <button className={css.button}>Zadzwoń do nas!</button>
+        <button className={css.button}>
+          <svg width="16" height="10">
+            <use href="../icons.svg#arrowbuttonblack"></use>
+          </svg>
+          <a onClick={() => scrollTo("contact")}>Zadzwoń do nas!</a>
+        </button>
       </div>
     </div>
   );
