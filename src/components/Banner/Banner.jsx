@@ -1,5 +1,6 @@
 import scrollTo from "../../utils/scroll";
 import css from "./Banner.module.css";
+import icon from "../../images/icons.svg";
 
 const Banner = () => {
   return (
@@ -14,7 +15,7 @@ const Banner = () => {
       </p>
       <button onClick={() => scrollTo("contact")} className={css.button}>
         <svg width="16" height="10">
-          <use href="../icons.svg#arrowbutton"></use>
+          <use href={`${icon}#arrowbutton`}></use>
         </svg>
         Zadzwoń do nas!
       </button>

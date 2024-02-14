@@ -1,5 +1,6 @@
 import { useState } from "react";
 import css from "./AboutUs.module.css";
+import icon from "../../images/icons.svg";
 
 const AboutUs = () => {
   const [isVisible, setIsVisible] = useState([false, false, false, false]);
@@ -29,7 +30,7 @@ const AboutUs = () => {
                   onClick={() => handleClick(index)}
                 >
                   <svg width="18" height="10">
-                    <use href="../icons.svg#arrowlist"></use>
+                    <use href={`${icon}#arrowlist`}></use>
                   </svg>
                 </button>
               </div>

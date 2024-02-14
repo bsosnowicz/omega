@@ -1,5 +1,6 @@
 import scrollTo from "../../utils/scroll";
 import css from "./Header.module.css";
+import icon from "../../images/icons.svg";
 
 const Header = () => {
   return (
@@ -19,7 +20,7 @@ const Header = () => {
         </ul>
         <button className={css.button}>
           <svg width="16" height="10">
-            <use href="../icons.svg#arrowbuttonblack"></use>
+            <use href={`${icon}#arrowbuttonblack`}></use>
           </svg>
           <a onClick={() => scrollTo("contact")}>Zadzwoń do nas!</a>
         </button>

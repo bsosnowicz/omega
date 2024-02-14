@@ -1,5 +1,7 @@
 import scrollTo from "../../utils/scroll";
 import css from "./Services.module.css";
+import image1 from "../../images/image1.jpg";
+import icon from "../../images/icons.svg";
 
 const Services = () => {
   return (
@@ -11,7 +13,7 @@ const Services = () => {
         </p>
       </div>
       <div className={css.itemContainer}>
-        <img alt="image" src="../../../public/image1" />
+        <img alt="image" src={image1} />
         <div>
           <h4 className={css.itemHeader}>Sprzątanie pomieszczeń</h4>
           <p className={css.itemDescription}>
@@ -23,7 +25,7 @@ const Services = () => {
           <button onClick={() => scrollTo("contact")} className={css.button}>
             {" "}
             <svg width="16" height="10">
-              <use href="../icons.svg#arrowbutton"></use>
+              <use href={`${icon}#arrowbutton`}></use>
             </svg>
             <a>Zadzwoń do nas!</a>
           </button>
@@ -48,17 +50,17 @@ const Services = () => {
             <button onClick={() => scrollTo("contact")} className={css.button}>
               {" "}
               <svg width="16" height="10">
-                <use href="../icons.svg#arrowbutton"></use>
+                <use href={`${icon}#arrowbutton`}></use>
               </svg>
               <a>Zadzwoń do nas!</a>
             </button>
           </div>
-          <img alt="image" src="../image1.jpg" />
+          <img alt="image" src={image1} />
         </div>
       </div>
       <div className={css.container}>
         <div className={css.itemContainer}>
-          <img alt="image" src="../image1.jpg" />
+          <img alt="image" src={image1} />
           <div className={css.textContainer}>
             <h4 className={css.itemHeader}>Czyszczenie suchym lodem</h4>
             <p className={css.itemDescription}>
@@ -76,7 +78,7 @@ const Services = () => {
             <button onClick={() => scrollTo("contact")} className={css.button}>
               {" "}
               <svg width="16" height="10">
-                <use href="../icons.svg#arrowbutton"></use>
+                <use href={`${icon}#arrowbutton`}></use>
               </svg>
               <a>Zadzwoń do nas!</a>
             </button>
