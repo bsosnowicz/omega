@@ -2,7 +2,7 @@ import scrollTo from "../../utils/scroll";
 import css from "./Header.module.css";
 import icon from "../../images/icons.svg";
 
-const Header = () => {
+const Header = ({ setIsVisible }) => {
   return (
     <div className={css.header}>
       <div className={css.background}></div>
@@ -19,13 +19,15 @@ const Header = () => {
             Kontakt
           </li>
         </ul>
-        <button className={css.button}>
+        <button onClick={() => scrollTo("contact")} className={css.button}>
           <svg width="16" height="10">
             <use href={`${icon}#arrowbuttonblack`}></use>
           </svg>
-          <a onClick={() => scrollTo("contact")}>Zadzwoń do nas!</a>
+          <a>Zadzwoń do nas!</a>
         </button>
-        <button className={css.hamburger}>HAM</button>
+        <button onClick={() => setIsVisible(true)} className={css.hamburger}>
+          HAM
+        </button>
       </div>
     </div>
   );
